@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Ashcombe College</title>
+<meta name="description" content="Contact Ashcombe College's admissions, registrar, and financial aid offices, or send a general message.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg class="crest" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M24 3L43 11V22C43 33 35 41 24 45C13 41 5 33 5 22V11L24 3Z" stroke="#1c2b4a" stroke-width="2" fill="#f6f3ec"/>
+        <path d="M15 20H33M15 26H33M17 32H31" stroke="#a8823a" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="24" cy="14" r="2.4" fill="#6e2a35"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">Ashcombe College</span>
+        <span class="brand-sub">EST. 1887 · GLENFORD</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="academics.html">Academics</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="campus-life.html">Campus Life</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a href="admissions.html#apply" class="nav-cta">Apply Now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section style="padding-bottom:2rem;">
+    <div class="container">
+      <p class="eyebrow">Get in touch</p>
+      <h1>Contact Ashcombe</h1>
+      <p class="lede" style="max-width:60ch;">Reach a specific office directly, or send a general message below and we'll route it for you.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="container">
+      <table class="ledger">
+        <caption>Office Directory</caption>
+        <thead>
+          <tr>
+            <th scope="col">Office</th>
+            <th scope="col">Contact</th>
+            <th scope="col">Hours</th>
+            <th scope="col">Building</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Admissions</td>
+            <td class="code-cell">admissions@ashcombe.example.edu</td>
+            <td>Mon–Fri, 8:30–4:30</td>
+            <td>Founders Hall, Rm. 2</td>
+          </tr>
+          <tr>
+            <td>Registrar</td>
+            <td class="code-cell">registrar@ashcombe.example.edu</td>
+            <td>Mon–Fri, 9:00–4:00</td>
+            <td>Founders Hall, Rm. 8</td>
+          </tr>
+          <tr>
+            <td>Financial Aid</td>
+            <td class="code-cell">finaid@ashcombe.example.edu</td>
+            <td>Mon–Fri, 9:00–4:00</td>
+            <td>Founders Hall, Rm. 5</td>
+          </tr>
+          <tr>
+            <td>Student Life</td>
+            <td class="code-cell">studentlife@ashcombe.example.edu</td>
+            <td>Mon–Fri, 10:00–5:00</td>
+            <td>Commons, 2nd Floor</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="grid-2" style="align-items:start;">
+        <div class="form-card">
+          <h2 class="mt-0">Send a message</h2>
+          <form data-validate data-success-message="Message received — the right office will be in touch within two business days.">
+            <div class="field">
+              <label for="c-name">Full name</label>
+              <input type="text" id="c-name" name="name" required autocomplete="name">
+              <span class="error-msg">Please enter your name.</span>
+            </div>
+            <div class="field">
+              <label for="c-email">Email address</label>
+              <input type="email" id="c-email" name="email" required autocomplete="email">
+              <span class="error-msg">Please enter a valid email address.</span>
+            </div>
+            <div class="field">
+              <label for="c-office">Which office is this for?</label>
+              <select id="c-office" name="office" required>
+                <option value="">Select an office</option>
+                <option>Admissions</option>
+                <option>Registrar</option>
+                <option>Financial Aid</option>
+                <option>Student Life</option>
+                <option>Other</option>
+              </select>
+              <span class="error-msg">Please select an office.</span>
+            </div>
+            <div class="field">
+              <label for="c-message">Message</label>
+              <textarea id="c-message" name="message" required minlength="10" maxlength="800"></textarea>
+              <span class="error-msg">Please enter at least 10 characters.</span>
+            </div>
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <div class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <div>
+          <h2 class="mt-0">Visiting campus</h2>
+          <p>Ashcombe is 212 River Road, Glenford, Vermont — about ninety minutes from Burlington and two hours from Montreal.</p>
+          <p>Campus tours run Monday through Saturday at 10:00 and 2:00 during the academic year, departing from the Founders Hall lobby. No appointment is required for prospective students; groups larger than six should email admissions in advance.</p>
+          <hr class="rule" style="margin:1.6rem 0;">
+          <h3>By car</h3>
+          <p>From I-89, take Exit 12 and follow River Road two miles east. Visitor parking is behind Founders Hall.</p>
+          <h3>By bus</h3>
+          <p>The Glenford campus shuttle meets the Vermont Translines stop at Glenford Depot four times daily.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="brand-name" style="font-family:var(--display); font-size:1.15rem;">Ashcombe College</span>
+        <p>212 River Road, Glenford, VT 05455. A residential liberal-arts college founded in 1887.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="campus-life.html">Campus Life</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Offices</h4>
+        <ul>
+          <li><a href="contact.html">Registrar</a></li>
+          <li><a href="contact.html">Financial Aid</a></li>
+          <li><a href="admissions.html">Admissions Office</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Alumni Quarterly</a></li>
+          <li><a href="#">Campus Events</a></li>
+          <li><a href="#">Faculty Research</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Ashcombe College. All rights reserved.</span>
+      <span>Accredited by the New England Association of Schools &amp; Colleges.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

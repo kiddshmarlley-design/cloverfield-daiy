@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academics — Ashcombe College</title>
+<meta name="description" content="Browse Ashcombe College's course catalog by department: Letters & History, Natural Sciences, Social Sciences, and Arts & Design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg class="crest" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M24 3L43 11V22C43 33 35 41 24 45C13 41 5 33 5 22V11L24 3Z" stroke="#1c2b4a" stroke-width="2" fill="#f6f3ec"/>
+        <path d="M15 20H33M15 26H33M17 32H31" stroke="#a8823a" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="24" cy="14" r="2.4" fill="#6e2a35"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">Ashcombe College</span>
+        <span class="brand-sub">EST. 1887 · GLENFORD</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="academics.html" aria-current="page">Academics</a>
+      <a href="admissions.html">Admissions</a>
+      <a href="campus-life.html">Campus Life</a>
+      <a href="contact.html">Contact</a>
+      <a href="admissions.html#apply" class="nav-cta">Apply Now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section style="padding-bottom:2rem;">
+    <div class="container">
+      <p class="eyebrow">Registrar's Office · Catalog Year 2026–27</p>
+      <h1>Academics</h1>
+      <p class="lede" style="max-width:60ch;">Thirty-four majors across four divisions, plus an interdisciplinary track for questions no single department owns. Every course below is drawn from the current catalog; seats are limited to 18 unless noted.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="container">
+
+      <div class="filter-bar" role="group" aria-label="Filter courses by department">
+        <button class="filter-chip" data-filter="all" aria-pressed="true">All Departments</button>
+        <button class="filter-chip" data-filter="letters" aria-pressed="false">Letters &amp; History</button>
+        <button class="filter-chip" data-filter="science" aria-pressed="false">Natural Sciences</button>
+        <button class="filter-chip" data-filter="social" aria-pressed="false">Social Sciences</button>
+        <button class="filter-chip" data-filter="arts" aria-pressed="false">Arts &amp; Design</button>
+      </div>
+
+      <table class="ledger">
+        <caption>Course Catalog — Fall 2026 (sample listing; full catalog available at registration)</caption>
+        <thead>
+          <tr>
+            <th scope="col">Code</th>
+            <th scope="col">Title</th>
+            <th scope="col">Department</th>
+            <th scope="col">Credits</th>
+            <th scope="col">Instructor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-dept="letters">
+            <td class="code-cell">LIT 214</td>
+            <td>The Realist Novel</td>
+            <td><span class="dept-badge">Letters</span></td>
+            <td>4</td>
+            <td>Prof. N. Adeyemi</td>
+          </tr>
+          <tr data-dept="letters">
+            <td class="code-cell">HIST 108</td>
+            <td>Atlantic World, 1500–1800</td>
+            <td><span class="dept-badge">Letters</span></td>
+            <td>4</td>
+            <td>Prof. R. Castellano</td>
+          </tr>
+          <tr data-dept="letters">
+            <td class="code-cell">PHIL 301</td>
+            <td>Seminar: Theories of Justice</td>
+            <td><span class="dept-badge">Letters</span></td>
+            <td>4</td>
+            <td>Prof. H. Okafor</td>
+          </tr>
+          <tr data-dept="science">
+            <td class="code-cell">BIO 112</td>
+            <td>Cell &amp; Molecular Biology</td>
+            <td><span class="dept-badge">Sciences</span></td>
+            <td>5</td>
+            <td>Prof. L. Vance</td>
+          </tr>
+          <tr data-dept="science">
+            <td class="code-cell">CHEM 220</td>
+            <td>Organic Chemistry I</td>
+            <td><span class="dept-badge">Sciences</span></td>
+            <td>5</td>
+            <td>Prof. D. Marsh</td>
+          </tr>
+          <tr data-dept="science">
+            <td class="code-cell">ENV 250</td>
+            <td>Watershed Ecology (field course)</td>
+            <td><span class="dept-badge">Sciences</span></td>
+            <td>4</td>
+            <td>Prof. S. Tran</td>
+          </tr>
+          <tr data-dept="science">
+            <td class="code-cell">PHYS 141</td>
+            <td>Mechanics &amp; Relativity</td>
+            <td><span class="dept-badge">Sciences</span></td>
+            <td>4</td>
+            <td>Prof. A. Kessler</td>
+          </tr>
+          <tr data-dept="social">
+            <td class="code-cell">ECON 101</td>
+            <td>Principles of Microeconomics</td>
+            <td><span class="dept-badge">Social Sci.</span></td>
+            <td>4</td>
+            <td>Prof. J. Whitfield</td>
+          </tr>
+          <tr data-dept="social">
+            <td class="code-cell">PSYC 208</td>
+            <td>Cognitive Development</td>
+            <td><span class="dept-badge">Social Sci.</span></td>
+            <td>4</td>
+            <td>Prof. M. Odera</td>
+          </tr>
+          <tr data-dept="social">
+            <td class="code-cell">POL 315</td>
+            <td>Comparative Constitutional Law</td>
+            <td><span class="dept-badge">Social Sci.</span></td>
+            <td>4</td>
+            <td>Prof. E. Baptiste</td>
+          </tr>
+          <tr data-dept="arts">
+            <td class="code-cell">STDART 130</td>
+            <td>Drawing I: Observation</td>
+            <td><span class="dept-badge">Arts</span></td>
+            <td>3</td>
+            <td>Prof. C. Renard</td>
+          </tr>
+          <tr data-dept="arts">
+            <td class="code-cell">MUS 205</td>
+            <td>Counterpoint &amp; Form</td>
+            <td><span class="dept-badge">Arts</span></td>
+            <td>3</td>
+            <td>Prof. T. Halvorsen</td>
+          </tr>
+          <tr data-dept="arts">
+            <td class="code-cell">DES 240</td>
+            <td>Design &amp; Computation Studio</td>
+            <td><span class="dept-badge">Arts</span></td>
+            <td>4</td>
+            <td>Prof. K. Nakamura</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Shared requirements</p>
+          <h2>What every Ashcombe degree has in common</h2>
+        </div>
+      </div>
+      <div class="grid-3">
+        <article class="program-card">
+          <p class="card-code">YEAR 1</p>
+          <h3>First-Year Seminar</h3>
+          <p>A single small seminar in argument and evidence, capped at 15, chosen from a rotating list of topics.</p>
+        </article>
+        <article class="program-card">
+          <p class="card-code">YEARS 1–2</p>
+          <h3>Distribution Requirement</h3>
+          <p>Two courses in each of the four divisions outside a student's declared major.</p>
+        </article>
+        <article class="program-card">
+          <p class="card-code">YEAR 4</p>
+          <h3>Senior Thesis</h3>
+          <p>An independent project defended before a three-person faculty committee each spring.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="brand-name" style="font-family:var(--display); font-size:1.15rem;">Ashcombe College</span>
+        <p>212 River Road, Glenford, VT 05455. A residential liberal-arts college founded in 1887.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="campus-life.html">Campus Life</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Offices</h4>
+        <ul>
+          <li><a href="contact.html">Registrar</a></li>
+          <li><a href="contact.html">Financial Aid</a></li>
+          <li><a href="admissions.html">Admissions Office</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Alumni Quarterly</a></li>
+          <li><a href="#">Campus Events</a></li>
+          <li><a href="#">Faculty Research</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Ashcombe College. All rights reserved.</span>
+      <span>Accredited by the New England Association of Schools &amp; Colleges.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
